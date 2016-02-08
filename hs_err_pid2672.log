@@ -1,0 +1,124 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 65536 bytes for offset table expansion
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (blockOffsetTable.cpp:83), pid=2672, tid=5164
+#
+# JRE version:  (7.0_51-b13) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.51-b03 mixed mode, sharing windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00879400):  JavaThread "Unknown thread" [_thread_in_vm, id=5164, stack(0x003b0000,0x00400000)]
+
+Stack: [0x003b0000,0x00400000],  sp=0x003ff8c8,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x18e0f1]
+V  [jvm.dll+0x187ff5]
+V  [jvm.dll+0x78970]
+V  [jvm.dll+0x78f16]
+V  [jvm.dll+0x7ce67]
+V  [jvm.dll+0x89a16]
+V  [jvm.dll+0x874e6]
+V  [jvm.dll+0x861f2]
+V  [jvm.dll+0x905c3]
+V  [jvm.dll+0x13dc14]
+V  [jvm.dll+0x16076c]
+V  [jvm.dll+0xc8ebf]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e40]
+C  [javaw.exe+0xa5b1]
+C  [javaw.exe+0xa63b]
+C  [kernel32.dll+0xb729]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00879400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5164, stack(0x003b0000,0x00400000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00400000 - 0x0042f000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x7c900000 - 0x7c9b3000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c8f8000 	C:\WINDOWS\system32\kernel32.dll
+0x77dc0000 - 0x77e6c000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77e70000 - 0x77f03000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77fe0000 - 0x77ff1000 	C:\WINDOWS\system32\Secur32.dll
+0x7e360000 - 0x7e3f1000 	C:\WINDOWS\system32\USER32.dll
+0x77f10000 - 0x77f59000 	C:\WINDOWS\system32\GDI32.dll
+0x773c0000 - 0x774c3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202\COMCTL32.dll
+0x77c00000 - 0x77c58000 	C:\WINDOWS\system32\msvcrt.dll
+0x77f60000 - 0x77fdc000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x76360000 - 0x7637d000 	C:\WINDOWS\system32\IMM32.DLL
+0x78aa0000 - 0x78b5f000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x6e770000 - 0x6eaf0000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x71ab0000 - 0x71aba000 	C:\WINDOWS\system32\WSOCK32.dll
+0x71a90000 - 0x71aa7000 	C:\WINDOWS\system32\WS2_32.dll
+0x71a80000 - 0x71a88000 	C:\WINDOWS\system32\WS2HELP.dll
+0x76b20000 - 0x76b4e000 	C:\WINDOWS\system32\WINMM.dll
+0x76be0000 - 0x76beb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6e6c0000 - 0x6e6cc000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x6d480000 - 0x6d4a0000 	C:\Program Files\Java\jre7\bin\java.dll
+0x6e750000 - 0x6e763000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: Main
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;D:\oracle\product\10.2.0\client_2\bin;C:\Program Files\Python26\;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;c:\Qt\4.7.0\bin;c:\Program Files\Microsoft SQL Server\90\Tools\binn\;c:\Program Files\PostgreSQL\8.2\bin;D:\eclipse-standard-luna-R-win32\eclipse;
+USERNAME=Admin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 2 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 3
+
+CPU:total 1 (1 cores per cpu, 1 threads per core) family 15 model 2 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, tsc
+
+Memory: 4k page, physical 523744k(35940k free), swap 2066516k(5244k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.51-b03) for windows-x86 JRE (1.7.0_51-b13), built on Dec 18 2013 19:09:58 by "java_re" with unknown MS VC++:1600
+
+time: Thu Jan 14 16:17:19 2016
+elapsed time: 0 seconds
+
